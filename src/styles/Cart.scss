@@ -1,0 +1,113 @@
+.Cart{
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 90vh;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: relative;
+  &__title{
+    padding-top: 80px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+  }
+  &__items{
+    margin-top: 50px;
+    padding: 0 15px;
+    padding-bottom: 170px;
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 60px;
+    &::before{
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      background-color: black;
+    }
+  }
+  &__name{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 11px;
+    font-weight: 600;
+    width: 390px;
+  }
+  &__image{
+    display: inline-block;
+    margin: 0 auto;
+  }
+  &__buttons{
+    position: absolute;
+    left: 500px;
+    display: flex;
+  }
+  &__button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    &:not(:first-child){
+      margin-left: 11px;
+    }
+  }
+  &__button--add{
+    background-color: #5aa214;
+  }
+  &__button--remove{
+    background-color: #ea1818;
+  }
+  &__quantity{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  &__price{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  &__buy{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  &__total{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 0 10px 0 25px;
+  }
+  &__btn{
+    background-color: #5aa214;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__removeItem{
+    font-size: 39px;
+    color: #fda407;
+    opacity: .7;
+    transition: all .1s ease-in;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__condition--clear{
+    text-align: center;
+    font-size: 42px;
+    line-height: 32px;
+    color: #fda407;
+    margin-top: 150px;
+  }
+}

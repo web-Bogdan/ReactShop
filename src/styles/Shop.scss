@@ -1,0 +1,31 @@
+.Shop{
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 100vh;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__added{
+    padding: 0 5px;
+    position: relative;
+    display: flex;
+  }
+  &__added p{
+    padding-right: 10px;
+  }
+  &__check{
+    position: absolute;
+    top: -11px;
+    right: 4px;
+  }
+}
+
+
+@media (max-width: 1220px){
+  .Shop__cards{
+    justify-content: center;
+  }
+}
